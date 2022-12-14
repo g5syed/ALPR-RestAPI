@@ -7,7 +7,7 @@ import torch
 import io
 global model
 global model2
-model =  torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt',force_reload=True) 
+model =  torch.hub.load('ultralytics/yolov5', 'custom', path='Vehicle.pt',force_reload=True) 
 model2 =  torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt',force_reload=True) 
 model.conf = 0.35  
 model.classes = [2,3,5,7]  

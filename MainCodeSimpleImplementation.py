@@ -13,7 +13,7 @@ import base64
 from flask import Flask, flash, request, redirect, url_for,jsonify
 global model
 global model2
-model =  torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt',force_reload=True) 
+model =  torch.hub.load('ultralytics/yolov5', 'custom', path='Vehicle.pt',force_reload=True) 
 model2 =  torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt',force_reload=True) 
 model.conf = 0.35  # NMS confidence threshold
 # model.iou = 0.45  # NMS IoU threshold
