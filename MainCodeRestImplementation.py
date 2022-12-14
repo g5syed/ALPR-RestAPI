@@ -8,10 +8,9 @@ import io
 global model
 global model2
 model =  torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt',force_reload=True) 
-model2 =  torch.hub.load('ultralytics/yolov5', 'custom', path='best_small.pt',force_reload=True) 
+model2 =  torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt',force_reload=True) 
 model.conf = 0.35  
 model.classes = [2,3,5,7]  
-
 
 app = Flask(__name__)
 api = Api(app)
